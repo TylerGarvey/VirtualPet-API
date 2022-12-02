@@ -1,0 +1,214 @@
+### Put your http requests here.
+
+
+
+### --------------ROBOTIC CATS-----------------
+
+
+
+
+### Get robot cats
+GET http://localhost:8080/roboticCats
+
+### Oil robot cat
+PUT http://localhost:8080/roboticCats/5/oil
+
+### Maintain robot cat
+PUT http://localhost:8080/roboticCats/5/maintain
+###
+##############################################
+
+
+
+
+
+### ----------ORGANIC CATS---------------
+
+
+
+
+
+### get all organic cats
+GET http://localhost:8080/organicCats
+
+### get cat by id
+GET http://localhost:8080/organicCats/7
+
+### add new cat
+POST http://localhost:8080/organicCats
+Content-Type: application/json
+
+{
+  "name": "Socks",
+  "hungerLevel": 5,
+  "thirstLevel": 5,
+  "boredomLevel": 5,
+  "litterBoxCleanliness": 10
+}
+###
+PUT http://localhost:8080/organicCats/6/feedCat
+
+### Give cat a drink
+PUT http://localhost:8080/organicCats/6/giveCatDrink
+
+### play with cat
+PUT http://localhost:8080/organicCats/6/play
+
+### clean litter box
+PUT http://localhost:8080/organicCats/6/cleanLitter
+
+### show cat's status
+GET http://localhost:8080/organicCats/7/showStatus
+#############################################################
+
+
+
+### ------------------ ORGANIC DOGS ------------------
+
+
+
+### GET ALL ORGANIC DOGS
+GET http://localhost:8080/organicDogs
+
+### GET DOG BY ID  
+GET  http://localhost:8080/organicDogs/4
+
+### ADD NEW DOG
+POST http://localhost:8080/organicDogs
+Content-Type: application/json
+
+{
+  "name": "Brian",
+  "hungerLevel": 53,
+  "thirstLevel": 55,
+  "boredomLevel": 51,
+  "cageCleanliness": 12
+}
+
+### CLEAN DOG CAGE
+PUT http://localhost:8080/organicDog/4/cleanCage
+
+### FEED DOG
+PUT http://localhost:8080/organicDog/4/feedDog
+
+### PLAY WITH DOG
+PUT http://localhost:8080/organicDog/4/playWithDog
+
+### GIVE DOG WATER
+PUT http://localhost:8080/organicDog/4/giveDogWater
+
+### WALK DOG
+PUT http://localhost:8080/organicDog/4/walkDog
+
+### SHOW STATUS
+GET http://localhost:8080/organicDog/4/showStatus
+##################################################
+
+
+
+### -----------------ROBOTIC DOG------------------
+
+
+
+### Get robotic Dogs
+GET http://localhost:8080/roboticDogs
+
+### Get oil robot dog
+PUT http://localhost:8080/roboticDogs/8/oil
+
+### Get maintenance robot Dog
+PUT http://localhost:8080/roboticDogs/8/maintain
+####################################################
+
+
+### --------------------SHELTER------------------------
+
+
+### Get statuses of all pets
+GET http://localhost:8080/shelter/allStatus
+
+### show how all pets look like
+GET http://localhost:8080/shelter/showAll
+
+### adopt a new organic dog
+POST http://localhost:8080/shelter/2/admitOrganicDog
+Content-Type: application/json
+
+{
+  "name": "Spike",
+  "hungerLevel": 33,
+  "thirstLevel": 22,
+  "boredomLevel": 55,
+  "cageCleanliness": 77
+}
+
+### adopt a new organic cat
+POST http://localhost:8080/shelter/1/admitOrganicCat
+Content-Type: application/json
+
+{
+  "name": "Whiskerson",
+  "hungerLevel": 76,
+  "thirstLevel": 33,
+  "boredomLevel": 54,
+  "litterBoxCleanliness": 24
+}
+
+### adopt a new robotic dog
+POST http://localhost:8080/shelter/2/admitRoboticDog
+Content-Type: application/json
+
+{
+  "name": "Bullet",
+  "maintenance": 46,
+  "oil": 55
+}
+
+### adopt a new robotic cat
+POST http://localhost:8080/shelter/1/admitRoboticCat
+Content-Type: application/json
+
+{
+  "name": "Lucy",
+  "oil": 44,
+  "maintenance": 27
+}
+
+### feed all pets
+PUT http://localhost:8080/shelter/feedAll
+
+### water all pets
+PUT http://localhost:8080/shelter/waterAll
+
+### play with all pets
+PUT http://localhost:8080/shelter/playWithAll
+
+### clean all pets
+PUT http://localhost:8080/shelter/cleanAll
+
+### oil all robotic pets
+PUT http://localhost:8080/shelter/oilAll
+
+### maintain all robotic pets 
+PUT http://localhost:8080/shelter/maintainAll
+
+### walk dogs
+PUT http://localhost:8080/shelter/walkAll
+
+### tick all
+PUT http://localhost:8080/shelter/tickAll
+
+### Delete a robotic cat
+DELETE http://localhost:8080/shelter/adoptRoboticCat/5
+
+### delete a robotic dog
+DELETE http://localhost:8080/shelter/adoptRoboticDog/8
+
+### delete an organic cat
+DELETE http://localhost:8080/shelter/adoptOrganicCat/6
+
+### delete an organic dog
+DELETE http://localhost:8080/shelter/adoptOrganicDog/4
+
+### adopt/remove all pets
+DELETE http://localhost:8080/shelter/adoptAll

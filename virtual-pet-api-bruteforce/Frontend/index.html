@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="styles/css" href="css/styles.css"/>
+    <title>Virtual Pet Shelter</title>
+</head>
+
+<body>
+    <header class="header-container">
+    <h1>VIRTUAL PET SHELTER</h1>
+   
+    <nav class="header-nav">
+        <li><a href="#petlist">See Pets Currently In Shelter</a></li>
+        <li><a href="#volunteer">Volunteer Helping Shelter Animals</a></li>
+        <li><a href="admitpet.html">Admit Pet Into Shelter</a></li>
+    </nav>
+    <div> 
+        <img src="./catImg.jpg" alt="catImg">
+      </div>
+</header>
+
+    <div class="flex-pet-list" id="petlist" >
+        <h2>CURRENT PETS AVAILABLE TO ADOPT</h2>
+
+        <div class="container"></div>
+        
+        <button id="fetchAll">AVAILABLE PETS</button>
+    </div>
+
+   
+
+    <div class="flex-volunteer" id="volunteer">
+        <div class="displayContainer" >
+            <h2>Volunteer Opportunities</h2>
+            <button class="feedAll" id="feedAll">Feed All Organic Pets</li>
+            <button class="waterAll" id="waterAll">Water All Organic Pets</li>
+            <button class="playAll" id="playAll">Play With All Organic Pets</li>
+            <button class="cleanAll" id="cleanAll">Clean All Organic Pets</li>
+            <button class="oilAll" id="oilAll">Oil All Robots</li>
+            <button class="maintainAll" id="maintainAll">Maintain All Robots</li>
+            <button class="walkAll" id="walkAll">Walk All Dogs</li>
+            <button class="adoptAll" id="adoptAll">Adopt All Animals In the Shelter, You Hero!</button>
+    </div>
+   
+
+    <footer class="footer">
+        <h6>© 2022 Brute Force Technologies</h6>
+    </footer>
+    
+    <script src="./app.js" type="module"></script>
+    <script src="./Components/Pet.js" type="module"></script>
+    <script src="./Components/individualPetView.js" type="module"></script>
+        
+    </body>
+</html>
